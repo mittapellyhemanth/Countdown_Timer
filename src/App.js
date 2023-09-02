@@ -37,7 +37,11 @@ function App() {
 
   return (
     <div className="App">
-   <input
+      <div className='title'>
+  <h1>CountDown Timer </h1>
+      </div>
+      <div className='timer-container'>
+      <input
         type="text"
         placeholder="Enter time (integer)"
         value={inputValue}
@@ -46,6 +50,7 @@ function App() {
       />
       <div id="current-time">{countdownTime}</div>
     </div>
+   </div>
   );
 }
 
